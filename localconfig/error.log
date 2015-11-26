@@ -1,0 +1,83 @@
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\main.py", line 40, in main
+    welcome = oWel.WelcomeWindow()
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\module\winwelcome.py", line 55, in __init__
+    if not self.initWindow(warn="mode"):
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\module\winwelcome.py", line 95, in initWindow
+    self.brwsloc.insert(0, self.localdata["datafolderloca"])
+KeyError: 'datafolderloca'
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\main.py", line 40, in main
+    welcome = oWel.WelcomeWindow()
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\app\openwindowwelcome.py", line 41, in __init__
+    super(WelcomeWindow, self).__init__("Welcome to OpenMark!", self.localconfig, self.repoconfig, menu=False)
+AttributeError: 'WelcomeWindow' object has no attribute 'localconfig'
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\main.py", line 40, in main
+    welcome = oWel.WelcomeWindow()
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\app\openwindowwelcome.py", line 41, in __init__
+    super(WelcomeWindow, self).__init__("Welcome to OpenMark!", self.localconfig, self.repoconfig, menu=False)
+AttributeError: 'WelcomeWindow' object has no attribute 'localconfig'
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\main.py", line 40, in main
+    welcome = oWel.WelcomeWindow()
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\app\openwindowwelcome.py", line 63, in __init__
+    if not self.initWindow(warn="datafolderloca"):
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\app\openwindowwelcome.py", line 70, in initWindow
+    self.window.resizable(0,0) #block resizing for the welcome window.
+  File "C:\Python34\lib\tkinter\__init__.py", line 1798, in wm_resizable
+    return self.tk.call('wm', 'resizable', self._w, width, height)
+_tkinter.TclError: can't invoke "wm" command: application has been destroyed
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\main.py", line 44, in main
+    mainWin = oAdmin.MainWin(welcome.localdata, welcome.repoconfig)
+AttributeError: 'WelcomeWindow' object has no attribute 'localdata'
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\main.py", line 44, in main
+    mainWin = oAdmin.MainWin(welcome.localconfig, welcome.repoconfig)
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\app\openwindowadmin.py", line 29, in __init__
+    self._initWindow()
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\app\openwindow.py", line 40, in _initWindow
+    self.window.attributes('-zoomed', True)
+  File "C:\Python34\lib\tkinter\__init__.py", line 1616, in wm_attributes
+    return self.tk.call(args)
+_tkinter.TclError: wrong # args: should be "wm attributes window ?-alpha ?double?? ?-transparentcolor ?color?? ?-disabled ?bool?? ?-fullscreen ?bool?? ?-toolwindow ?bool?? ?-topmost ?bool??"
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\main.py", line 44, in main
+    mainWin = oAdmin.MainWin(welcome.localconfig, welcome.repoconfig)
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\app\openwindowadmin.py", line 29, in __init__
+    self._initWindow()
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\app\openwindow.py", line 41, in _initWindow
+    self._centreWindow(self.window)
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\app\openwindow.py", line 54, in _centreWindow
+    size(scx, scy)
+TypeError: 'bool' object is not callable
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\main.py", line 44, in main
+    mainWin = oAdmin.MainWin(welcome.localconfig, welcome.repoconfig)
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\app\openwindowadmin.py", line 29, in __init__
+    self._initWindow()
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\app\openwindow.py", line 41, in _initWindow
+    self._centreWindow(self.window)
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\app\openwindow.py", line 50, in _centreWindow
+    menu_height = win.winfo_height() + (titlebar_height + frm_width)
+NameError: name 'win' is not defined
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\main.py", line 44, in main
+    mainWin = oAdmin.MainWin(welcome.localconfig, welcome.repoconfig)
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\app\openwindowadmin.py", line 29, in __init__
+    self._initWindow()
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\app\openwindow.py", line 41, in _initWindow
+    self._positionWindow(self.window)
+  File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\app\openwindow.py", line 55, in _positionWindow
+    size = (w-scx, h-scy-menu_height)
+NameError: name 'menu_height' is not defined

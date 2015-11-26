@@ -4,36 +4,48 @@
 #                                                              #
 # PYTHON DEPENDANCIES: pycrypto                                #
 
+'''
+Created on Nov 26, 2015
+
+                       OpenMark Suite
+Copyright (C) 2015  Matthew Muresan
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+@author: Matthew Muresan
+'''
+
 #http://www.tkdocs.com/tutorial/index.html
 #www.nmt.edu/tcc/help/pubs/tkinter/
 
-import module.window as oWin
+import app.openwindowwelcome as oWel
+import module.errorsend as eSend
+import app.openwindowadmin as oAdmin
 import os.path
 import json
-import tkinter as tk
-import tkinter.messagebox as tkm
 
-        
 def main():
-    if (os.path.isfile("localconfig/userconfigs.json")):
-        #check if local data exists
-        with open ("localconfig/userconfigs.json", 'r') as config:
-            localdata = json.load(config)
-    else:
-        welcomeWindow = oWin.WelcomeWindow()
-        if welcomeWindow.appkill: 
+    try:
+        welcome = oWel.WelcomeWindow()
+        if welcome.appkill: 
             return
-        localdata = welcomeWindow.localdata
-
-    if ("datafolderloca" in localdata and os.path.isdir(localdata["datafolderloca"])):
-        #In this scenario we can go ahead and load configuration data.
-        #welcomeWindow = oWin.WelcomeWindow()
-        pass
-    else:
-        welcomeWindow = oWin.WelcomeWindow(warn="datafolderloca")
-        if welcomeWindow.appkill: 
-            return
+        
+        mainWin = oAdmin.MainWin(welcome.localconfig, welcome.repoconfig)
     
+    except:
+        eSend.ErrorSend()
+        raise
     
 if __name__ == "__main__":
     main()
