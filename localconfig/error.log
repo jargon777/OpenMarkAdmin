@@ -81,3 +81,403 @@ Traceback (most recent call last):
   File "C:\Users\Matthew Muresan\git\OpenMarkAdmin\app\openwindow.py", line 55, in _positionWindow
     size = (w-scx, h-scy-menu_height)
 NameError: name 'menu_height' is not defined
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 35, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\module\errorsend.py", line 61, in _windowClose
+    print(self.window.master())
+TypeError: 'NoneType' object is not callable
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\module\errorsend.py", line 61, in _windowClose
+    print(self.window.master())
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\module\errorsend.py", line 61, in _windowClose
+    print(self.window.master())
+TypeError: 'NoneType' object is not callable
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\module\errorsend.py", line 61, in _windowClose
+    self.window.master.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\module\errorsend.py", line 61, in _windowClose
+    self.window.master.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\module\errorsend.py", line 61, in _windowClose
+    self.window.master.quit()
+AttributeError: 'NoneType' object has no attribute 'quit'
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\module\errorsend.py", line 63, in _windowClose
+    self.parentWindow.destroy()
+AttributeError: 'MainWin' object has no attribute 'destroy'
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Python34\lib\tkinter\__init__.py", line 1533, in __call__
+    return self.func(*args)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 32, in _windowClose
+    raise
+RuntimeError: No active exception to reraise
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\main.py", line 44, in main
+    mainWin = oAdmin.MainWin(welcome.localconfig, welcome.repoconfig)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 31, in __init__
+    self._initWindow()
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 40, in _initWindow
+    self._buildToolbar(toolbarcontent)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 48, in _buildToolbar
+    mainPane = tk.Frame(toolbarcontent, relief=tk.GROOVE, pdx=2, pady=2)
+  File "C:\Python34\lib\tkinter\__init__.py", line 2582, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+  File "C:\Python34\lib\tkinter\__init__.py", line 2122, in __init__
+    (widgetName, self._w) + extra + self._options(cnf))
+_tkinter.TclError: unknown option "-pdx"
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\main.py", line 44, in main
+    mainWin = oAdmin.MainWin(welcome.localconfig, welcome.repoconfig)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 31, in __init__
+    self._initWindow()
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 42, in _initWindow
+    self.window.pack(fill=tk.X)
+  File "C:\Python34\lib\tkinter\__init__.py", line 1932, in __getattr__
+    return getattr(self.tk, attr)
+AttributeError: 'tkapp' object has no attribute 'pack'
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\main.py", line 44, in main
+    mainWin = oAdmin.MainWin(welcome.localconfig, welcome.repoconfig)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 31, in __init__
+    self._initWindow()
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 40, in _initWindow
+    self._buildToolbar(toolbarcontent)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 49, in _buildToolbar
+    mainPane = ttk.Frame(toolbarcontent, relief=tk.SUNKEN, padx=2, pady=2)
+  File "C:\Python34\lib\tkinter\ttk.py", line 736, in __init__
+    Widget.__init__(self, master, "ttk::frame", kw)
+  File "C:\Python34\lib\tkinter\ttk.py", line 553, in __init__
+    tkinter.Widget.__init__(self, master, widgetname, kw=kw)
+  File "C:\Python34\lib\tkinter\__init__.py", line 2122, in __init__
+    (widgetName, self._w) + extra + self._options(cnf))
+_tkinter.TclError: unknown option "-pady"
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\main.py", line 44, in main
+    mainWin = oAdmin.MainWin(welcome.localconfig, welcome.repoconfig)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 31, in __init__
+    self._initWindow()
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 40, in _initWindow
+    bottomSep = ttk.Separator(window, orient=tk.VERTICAL)
+NameError: name 'window' is not defined
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\main.py", line 44, in main
+    mainWin = oAdmin.MainWin(welcome.localconfig, welcome.repoconfig)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 31, in __init__
+    self._initWindow()
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 40, in _initWindow
+    self._buildToolbar(toolbarcontent)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 53, in _buildToolbar
+    mainPane.grid(row=0, col=1, sticky=tk.LEFT)
+  File "C:\Python34\lib\tkinter\__init__.py", line 2057, in grid_configure
+    + self._options(cnf, kw))
+_tkinter.TclError: ambiguous option "-col": must be -column, -columnspan, -in, -ipadx, -ipady, -padx, -pady, -row, -rowspan, or -sticky
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\main.py", line 44, in main
+    mainWin = oAdmin.MainWin(welcome.localconfig, welcome.repoconfig)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 31, in __init__
+    self._initWindow()
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 40, in _initWindow
+    self._buildToolbar(toolbarcontent)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 53, in _buildToolbar
+    mainPane.grid(row=0, col=0, sticky=tk.W)
+  File "C:\Python34\lib\tkinter\__init__.py", line 2057, in grid_configure
+    + self._options(cnf, kw))
+_tkinter.TclError: ambiguous option "-col": must be -column, -columnspan, -in, -ipadx, -ipady, -padx, -pady, -row, -rowspan, or -sticky
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\main.py", line 44, in main
+    mainWin = oAdmin.MainWin(welcome.localconfig, welcome.repoconfig)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 31, in __init__
+    self._initWindow()
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 40, in _initWindow
+    self._buildToolbar(toolbarcontent)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 53, in _buildToolbar
+    mainPane.grid(row=0, col=0, sticky=tk.W)
+  File "C:\Python34\lib\tkinter\__init__.py", line 2057, in grid_configure
+    + self._options(cnf, kw))
+_tkinter.TclError: ambiguous option "-col": must be -column, -columnspan, -in, -ipadx, -ipady, -padx, -pady, -row, -rowspan, or -sticky
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\main.py", line 44, in main
+    mainWin = oAdmin.MainWin(welcome.localconfig, welcome.repoconfig)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 31, in __init__
+    self._initWindow()
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 40, in _initWindow
+    self._buildToolbar(toolbarcontent)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 53, in _buildToolbar
+    mainPane.grid(row=0, col=0, sticky=(tk.W))
+  File "C:\Python34\lib\tkinter\__init__.py", line 2057, in grid_configure
+    + self._options(cnf, kw))
+_tkinter.TclError: ambiguous option "-col": must be -column, -columnspan, -in, -ipadx, -ipady, -padx, -pady, -row, -rowspan, or -sticky
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\main.py", line 44, in main
+    mainWin = oAdmin.MainWin(welcome.localconfig, welcome.repoconfig)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 31, in __init__
+    self._initWindow()
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 42, in _initWindow
+    toolbarcontent.pack(fill=tk.X)
+  File "C:\Python34\lib\tkinter\__init__.py", line 1974, in pack_configure
+    + self._options(cnf, kw))
+_tkinter.TclError: cannot use geometry manager pack inside . which already has slaves managed by grid
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\main.py", line 44, in main
+    mainWin = oAdmin.MainWin(welcome.localconfig, welcome.repoconfig)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 31, in __init__
+    self._initWindow()
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 40, in _initWindow
+    self._buildToolbar(toolbarcontent)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 53, in _buildToolbar
+    modeSep = ttk.Separator(modepane, orient=tk.VERTICAL)
+NameError: name 'modepane' is not defined
+ERROR:root:An Exception Occurred
+Traceback (most recent call last):
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\main.py", line 44, in main
+    mainWin = oAdmin.MainWin(welcome.localconfig, welcome.repoconfig)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 31, in __init__
+    self._initWindow()
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 40, in _initWindow
+    self._buildToolbar(toolbarcontent)
+  File "C:\Users\Matthew Muresan\git\OpenMarkSheets\app\openwindowadmin.py", line 70, in _buildToolbar
+    modeSep.pack(side=tk.RIGHT, fill=tk.Y)
+  File "C:\Python34\lib\tkinter\__init__.py", line 1974, in pack_configure
+    + self._options(cnf, kw))
+_tkinter.TclError: cannot use geometry manager pack inside .45659888.45659920 which already has slaves managed by grid

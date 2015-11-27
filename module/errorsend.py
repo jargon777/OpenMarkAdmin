@@ -26,9 +26,14 @@ import traceback
 import sys
 import logging
 import tkinter as tk
+import sys
 
 class ErrorSend:
-    def __init__(self):        
+    def __init__(self):
+        pass
+        
+        
+    def callError(self, *args):
         logging.basicConfig(level=logging.DEBUG, filename='localconfig/error.log')
         logging.exception("An Exception Occurred")
         
@@ -54,6 +59,8 @@ class ErrorSend:
         self.window.focus_force()
         self.window.mainloop()
         
+        
     def _windowClose(self):
-        self.window.quit()
+        self.window.destroy()
+        sys.exit()
                     

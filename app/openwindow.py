@@ -15,12 +15,17 @@ class OpenWindow:
     OpenWindow Class. Base class for all tkinter windows in OpenMarksheets
     '''
     def __init__(self, applicationName, localconfig, repoconfig, menu=True):
+        self.window = False
+        tk.Tk.report_callback_exception = self._callError
         self.localconfigloc = "localconfig/userconfigs.json"
         self.localconfig = localconfig
         self.repoconfig = repoconfig
         self.applicationName = applicationName
         self.menu = menu
         self._skelInit()
+        
+        #redirect X button to window close.
+        self.window.protocol("WM_DELETE_WINDOW", self._windowClose)
     
     #inheritable class that sets up the basic tkinter window
     def _skelInit(self):
@@ -67,4 +72,16 @@ class OpenWindow:
         jsloader.jsonWrite(self.localconfig["repoconfig"], self.repoconfig)
     
     def _windowClose(self):
+        self._windowPreClose()
         self.window.destroy()
+        
+    def _windowPreClose(self):
+        '''
+        overidable inherited method to run tasks in addition to window_close.
+        '''
+        pass
+        
+    def _callError(self, *args):
+        errorHandle = errorcontrol.ErrorSend()
+        errorHandle.callError(*args)
+        

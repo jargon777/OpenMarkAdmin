@@ -30,7 +30,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #www.nmt.edu/tcc/help/pubs/tkinter/
 
 import app.openwindowwelcome as oWel
-import module.errorsend as eSend
+import module.errorsend as errorcontrol
 import app.openwindowadmin as oAdmin
 import os.path
 import json
@@ -44,8 +44,8 @@ def main():
         mainWin = oAdmin.MainWin(welcome.localconfig, welcome.repoconfig)
     
     except:
-        eSend.ErrorSend()
-        raise
+        errorHandle = errorcontrol.ErrorSend()
+        errorHandle.callError()
     
 if __name__ == "__main__":
     main()

@@ -54,18 +54,18 @@ class WelcomeWindow(OpenWindow):
                 self.repoconfig = jsonData
                     
             if ("mode" not in self.repoconfig):
-                if not self.initWindow(warn="mode"):
+                if not self._initWindow(warn="mode"):
                     return
     
         elif (os.path.isfile("localconfig/userconfigs.json")):
             #there's a local config file telling us there's a repository, but there's none there.
-            if not self.initWindow(warn="datafolderloca"):
+            if not self._initWindow(warn="datafolderloca"):
                 return
         else:
-            if not self.initWindow():
+            if not self._initWindow():
                 return      
     
-    def initWindow(self, warn=False):   
+    def _initWindow(self, warn=False):   
         super(WelcomeWindow, self).__init__("Welcome to OpenMark!", self.localconfig, self.repoconfig, menu=False)  
            
         self.window.resizable(0,0) #block resizing for the welcome window.
