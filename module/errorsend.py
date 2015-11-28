@@ -26,7 +26,7 @@ import traceback
 import sys
 import logging
 import tkinter as tk
-import sys
+import os
 
 class ErrorSend:
     def __init__(self):
@@ -62,5 +62,5 @@ class ErrorSend:
         
     def _windowClose(self):
         self.window.destroy()
-        sys.exit()
+        os._exit(1) #emergency exit.
                     

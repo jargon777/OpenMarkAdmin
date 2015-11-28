@@ -28,6 +28,7 @@ import tkinter.ttk as ttk
 class MainWin(OpenWindow):
     def __init__(self, localconfig, repoconfig):
         super(MainWin, self).__init__("OpenMarkAdmin", localconfig, repoconfig) 
+        self.window.minsize(800, 600)
         self._initWindow()       
         
     def _initWindow(self):
@@ -47,41 +48,98 @@ class MainWin(OpenWindow):
         
         self.window.mainloop()
     def _BuildMainWindow(self, mainwindow):
-        mainNotebook = ttk.Notebook(mainwindow)
-        notebook1 = ttk.Frame(mainNotebook)
-        notebook2 = ttk.Frame(mainNotebook)
-        mainNotebook.add(notebook1, text="1")
-        mainNotebook.add(notebook2, text="2")
+        leftNoteFrame = ttk.Frame(mainwindow)
+        leftNotebook = ttk.Notebook(leftNoteFrame)
+        leftNotebook1 = ttk.Frame(leftNotebook)
+        leftNotebook1Scroll = tk.Scrollbar(leftNotebook1, orient=tk.VERTICAL)
+        leftNotebook2 = ttk.Frame(leftNotebook)
+        leftNotebook3 = ttk.Frame(leftNotebook)
+        leftNotebook.add(leftNotebook1, text="Staff")
+        leftNotebook.add(leftNotebook2, text="Students")
+        leftNotebook.add(leftNotebook3, text="Other")
         
-        textfil1 = ttk.Label(notebook1, text="Please select a location where local data "
-            +"should be stored. If in network client mode, this is where cloud "
-            +"data will be stored when you sync it to your computer. "
-            +"If you are using other OpenMark "
-            +"programs ensure this location matches the locations specified in them."
-            ,wraplength=550, justify=tk.LEFT)
-        textfil2 = ttk.Label(notebook2, text="Please select a location where local data "
-                    +"should be stored. If in network client mode, this is where cloud "
-                    +"data will be stored when you sync it to your computer. "
-                    +"If you are using other OpenMark "
-                    +"programs ensure this location matches the locations specified in them."
-                    ,wraplength=550, justify=tk.LEFT)
+        searchEnt = tk.Entry(leftNoteFrame)
+        img = tk.PhotoImage(file="resources/icons/bitcons/icons/gif/tan/16x16/search.gif")
+        searchbutton = ttk.Button(leftNoteFrame, image=img, style='Toolbutton')
+        searchbutton.img = img        
+        img = tk.PhotoImage(file="resources/icons/bitcons/icons/gif/red/16x16/add.gif")
+        addbutton = ttk.Button(leftNoteFrame, image=img, style='Toolbutton')
+        addbutton.img = img   
+        testlist = ['Muresan, Matthew', 'Muresan, Tiffany']
+        leftNotebook1Listbox = tk.Listbox(leftNotebook1, xscrollcommand=leftNotebook1Scroll.set)
+        leftNotebook1Scroll['command'] = leftNotebook1Listbox.yview
+        for element in testlist:
+            leftNotebook1Listbox.insert(tk.END, element)
+        leftNotebook1Listbox.grid(row=0, column=0, sticky=(tk.N, tk.S, tk.E, tk.W))
+        leftNotebook1Scroll.grid(row=0, column=1, sticky=(tk.N, tk.S))
+        leftNotebook1.columnconfigure(0, weight=1)
+        leftNotebook1.rowconfigure(0, weight=1)
         
-        textfil2.pack()
-        textfil1.pack()
+        rightInfoPane = ttk.Frame(mainwindow, padding=(12,12,12,12))
+        basicInfo = ttk.Labelframe(rightInfoPane, text="Basic Information", padding=(5,5,5,5))
+        spaceLab = tk.Label(basicInfo, text="empty")
+        testlab = tk.Label(basicInfo, text="test", relief=tk.GROOVE, background="#FFD9D9", width=20, borderwidth=1)
+        testent = tk.Entry(basicInfo, relief=tk.GROOVE, background="#FFEBEB", width=20, borderwidth=1)
+        testlab2 = tk.Label(basicInfo, text="test", relief=tk.GROOVE, background="#FFD9D9", width=20, borderwidth=1)
+        testent2 = tk.Entry(basicInfo, relief=tk.GROOVE, background="#FFEBEB", width=20, borderwidth=1)
+        testlab3 = tk.Label(basicInfo, text="test", relief=tk.GROOVE, background="#FFD9D9", width=20, borderwidth=1)
+        testent3 = tk.Entry(basicInfo, relief=tk.GROOVE, background="#FFEBEB", width=20, borderwidth=1)
+        testlab4 = tk.Label(basicInfo, text="test", relief=tk.GROOVE, background="#FFD9D9", width=20, borderwidth=1)
+        testent4 = tk.Entry(basicInfo, relief=tk.GROOVE, background="#FFEBEB", width=20, borderwidth=1)
         
-        mainNotebook.pack(fill=tk.BOTH)
+        basicInfo.pack(fill=tk.X)
+        testlab.grid(row=0, column=0)
+        testent.grid(row=0, column=1, sticky=(tk.E, tk.W))
+        spaceLab.grid(row=0, column=2)
+        testlab2.grid(row=0, column=3)
+        testent2.grid(row=0, column=4, sticky=(tk.E, tk.W))
+        testlab3.grid(row=1, column=0)
+        testent3.grid(row=1, column=1, sticky=(tk.E, tk.W))
+        testlab4.grid(row=1, column=3)
+        testent4.grid(row=1, column=4, sticky=(tk.E, tk.W))
+        basicInfo.columnconfigure(1, weight=2)
+        basicInfo.columnconfigure(4, weight=2)
+        basicInfo.columnconfigure(2, minsize=40)
+        spaceLab.destroy()
+        
+        leftNoteFrame.grid(row=0, column=0, sticky=(tk.N, tk.S, tk.E, tk.W))
+        leftNotebook.pack(fill=tk.BOTH, expand=1)
+        addbutton.pack(side=tk.LEFT)
+        searchbutton.pack(side=tk.LEFT)
+        searchEnt.pack(side=tk.LEFT, fill=tk.X, expand=1)
+        
+        rightInfoPane.grid(row=0, column=1, sticky=(tk.N, tk.S, tk.E, tk.W))
+        mainwindow.columnconfigure(0, weight=3)
+        mainwindow.columnconfigure(1, weight=7)
+        mainwindow.rowconfigure(0, weight=1)
+        
+    def _buildEntryTable(self, frame, content):
+        pass
         
     def _buildToolbar(self, toolbarcontent):
+        
         rowOne = ttk.Frame(toolbarcontent)
         mainPane = ttk.Frame(rowOne, padding=(1,1,1,1))
         modePane = ttk.Frame(rowOne, padding=(5,1,1,1))
         modeSep = ttk.Separator(rowOne, orient=tk.VERTICAL)
         #bottomSep = ttk.Separator(toolbarcontent, orient=tk.HORIZONTAL)
-        testbutton = tk.Button(mainPane, text="T", relief=tk.FLAT)
         
-        peopleButton = tk.Button(modePane, text="People", relief=tk.FLAT, borderwidth=2)
-        listsButton = tk.Button(modePane, text="Lists", relief=tk.SUNKEN, borderwidth=2)
-        serverButton = tk.Button(modePane, text="Server", relief=tk.FLAT, borderwidth=2)
+        img = tk.PhotoImage(file="resources/icons/bitcons/icons/gif/tan/16x16/save.gif")
+        testbutton = ttk.Button(mainPane, image=img, style='Toolbutton')
+        testbutton.img = img
+        
+        img = tk.PhotoImage(file="resources/icons/bitcons/icons/gif/blue/16x16/user.gif")
+        peopleButton = ttk.Button(modePane, image=img, style='Toolbutton')
+        peopleButton.img = img
+        peopleButton.state(['pressed'])
+        
+        img = tk.PhotoImage(file="resources/icons/bitcons/icons/gif/blue/16x16/addressbook.gif")
+        listsButton = ttk.Button(modePane, image=img, style='Toolbutton')
+        listsButton.img = img
+        
+        img = tk.PhotoImage(file="resources/icons/bitcons/icons/gif/blue/16x16/tools.gif")
+        serverButton = ttk.Button(modePane, image=img, style='Toolbutton')
+        serverButton.img = img
         
         rowOne.pack(expand=1, fill=tk.X)
         

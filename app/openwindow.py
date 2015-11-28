@@ -9,6 +9,7 @@ import tkinter.filedialog as tkf
 import tkinter.messagebox as tkm
 import module.errorsend as errorcontrol
 import module.jsonhandle as jsloader
+from app.opendialogabout import AboutProgramDialog
 
 class OpenWindow:
     '''
@@ -37,15 +38,24 @@ class OpenWindow:
         if self.menu:
             self.mainmenubar = tk.Menu(self.window)
             self.window.config(menu=self.mainmenubar)
+            
             self.fileMenu = tk.Menu(self.mainmenubar)
             self.fileMenu.add_command(label="Exit", command=self._windowClose)
+            
+            self.helpMenu = tk.Menu(self.mainmenubar)
+            self.helpMenu.add_command(label="About", command=self._showAbout)
+            
             self.mainmenubar.add_cascade(label="File", menu=self.fileMenu)
+            self.mainmenubar.add_cascade(label="Help", menu=self.helpMenu)
     
     def _initWindow(self):
         #get the window size and shrink it a little.
         self._positionWindow(self.window)
 
         self.window.mainloop()
+    
+    def _showAbout(self):
+        AboutProgramDialog(self.window)
     
     def _positionWindow(self, window, size=False):
         window.update_idletasks()
